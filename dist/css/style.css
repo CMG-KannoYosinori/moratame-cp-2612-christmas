@@ -1,0 +1,1292 @@
+@charset "utf-8";
+
+/* 
+=================================================================================
+
+▼▼▼　テンプレJS用のCSS。不要なものは削除　▼▼▼
+
+=================================================================================
+*/
+html {
+  font-family: "Noto Sans JP", serif;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #4A2204;
+}
+h1, h2, h3, h4, h5 {
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 769px) {
+  /* PC用 */
+  html {
+    font-size: 10px;
+  }
+}
+.inner {
+  position: relative;
+  max-width: calc(100vw - 3rem);
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  /* SP用 */
+  html {
+    font-size: calc(10vw / 375 * 100); /* 最大値768px、文字サイズ10pxの場合 */
+  }
+  .inner {
+    max-width: calc(100vw - 3rem);
+  }
+}
+
+main { padding: 0; }
+
+footer {
+  background: #fff;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  footer {
+    padding: 2rem 0;
+  }
+}
+.f-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+section[class^="area"] {
+  position: relative;
+}
+
+/* i[id] + section[class^="area"] { margin-top: 5rem; } */
+
+body {
+  width: 100%;
+  background: #FCF5E8;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  overflow: clip;
+  position: relative;
+}
+
+/* ID登録用 */
+i[id] {
+  font-size: 0;
+  display: block;
+}
+
+/* ul.list01 */
+@media screen and (min-width: 769px) {/* PC用 */
+  ul.list01 {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  }
+  ul.list01 > li {
+    width: calc((99.99% - 4rem) / 2);
+  }
+}
+ul.list01 > li {
+  position: relative;
+}
+ul.list01 > li .comming_soon {
+  position: relative;
+  background: rgba(0,0,0,0.3);
+  border-radius: 1rem;
+  position: absolute;
+  top: 21%;
+  bottom: 7.5%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+ul.list01 > li .comming_soon .img01 {
+  width: 63%;
+  transform: translateY(-30%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ul.list01 > li .comming_soon .img02 {
+  width: 66%;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  ul.list01 > li + li {
+    margin-top: 4rem;
+  }
+  ul.list01 > li .comming_soon {
+    top: 23%;
+    bottom: -1%;
+  }
+}
+/* ▲ ul.list01 ▲ */
+
+.sec02 {
+  background: url(../img/bg.webp) top center / 192rem auto no-repeat;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  .sec02 {
+    background: url(../img/bg_sp.webp) top center / 100% auto repeat-y;
+  }
+}
+
+.sec02 .box01 {
+  background: #fff;
+  border: 1px solid;
+  padding: 1em;
+}
+
+/* ul.list02 */
+ul.list02 {
+  padding-left: 1em;
+}
+ul.list02 > li {
+  list-style: disc;
+}
+ul.list02 > li + li {
+  margin-top: .5em;
+}
+/* ▲ ul.list02 ▲ */
+
+.sec03 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/bg03.webp) center center / cover no-repeat;
+}
+.sec03 .inner {
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 769px) {/* PC用 */
+  .sec03 .snow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: relative;
+  }
+}
+.sec03 .snow::before,
+.sec03 .snow::after {
+  content: "";
+  display: block;
+  width: 8.1rem;
+  height: 12.3rem;
+  background: url(../img/snow.webp) center center / contain no-repeat;
+  pointer-events: none;
+}
+.sec03 .snow::after {
+  background: url(../img/snow02.webp) center center / contain no-repeat;
+}
+.sec03 .txt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25em;
+}
+.sec03 .txt::before,
+.sec03 .txt::after {
+  content: "";
+  display: block;
+  width: 1em;
+  height: 2px;
+  background: #fff;
+  pointer-events: none;
+  transform: rotate(60deg);
+}
+.sec03 .txt::after {
+  transform: rotate(-60deg);
+}
+.sec03 .bg {
+  position: absolute;
+  bottom: 0;
+  display: table;
+  margin: 0 auto;
+  max-width: 112rem;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  .sec03 .snow::before,
+  .sec03 .snow::after {
+    width: 100%;
+    height: 4.6rem;
+    background: url(../img/snow_sp.webp) center center / contain no-repeat;
+  }
+  .sec03 .snow::after {
+    background: url(../img/snow02_sp.webp) center center / contain no-repeat;
+  }
+  .sec03 .txt::before,
+  .sec03 .txt::after {
+    width: 1.3em;
+    height: 2px;
+  }
+}
+.sec04 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/bg04.webp) center center / cover no-repeat;
+}
+.sec04-box .frame01 {
+  position: relative;
+}
+.sec04-box .content {
+  background: #fff;
+  margin-top: -1px;
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+}
+.sec04-box .frame02 {
+  position: relative;
+  margin-top: -1px;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  .sec04-box .content {
+    padding: 1.5rem;
+  }
+}
+.midashi01 {
+  position: relative;
+  padding-left: 1em;
+  line-height: 1.3;
+}
+.midashi01:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1em;
+  height: 1.3em;
+  top: 0;
+  left: 0;
+  background: url(../img/star.webp) center center / 1.3rem auto no-repeat;
+  pointer-events: none;
+}
+
+strong {
+  font-size: 150%;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  strong {
+    font-size: 110%;
+  }
+}
+
+/* 
+=================================================================================
+
+▼▼▼　色　▼▼▼
+
+=================================================================================
+*/
+/* ▼ basic ▼ */
+.basic { color: #4A2204 !important;}
+.bg_basic { background: #4A2204 !important; }
+/* ▲ basic ▲ */
+
+/* ▼ red ▼ */
+.red { color: #E43E32 !important; }
+.bg_red { background: #E43E32 !important; }
+/* ▲ red ▲ */
+
+/* ▼ brown ▼ */
+.brown { color: #9B1512 !important; }
+.bg_brown { background: #9B1512 !important; }
+/* ▲ brown ▲ */
+
+/* ▼ yellow ▼ */
+.yellow { color: #FFD84D !important; }
+.bg_yellow { background: #FFD84D !important; }
+/* ▲ yellow ▲ */
+
+/* ▼ white ▼ */
+.white { color: #fff !important; }
+.bg_white { background: #fff !important; }
+/* ▲ white ▲ */
+
+/* 
+=================================================================================
+
+▼▼▼　文字　▼▼▼
+
+=================================================================================
+*/
+.go {
+  font-family: "Noto Sans JP", serif;
+}
+.pop {
+  font-family: "Poppins", serif;
+}
+.b {
+  font-weight: 700;
+}
+.sb {
+  font-weight: 600;
+}
+.m {
+  font-weight: 500;
+}
+
+/* googleマテリアルアイコン */
+body .material-symbols-outlined {
+  font-size: inherit;
+  vertical-align: baseline;
+  line-height: inherit;
+}
+
+/* 
+=================================================================================
+
+▼▼▼　サンプルボタン　▼▼▼
+
+=================================================================================
+*/
+
+/* ▼ btn01 ▼ */
+.btn01 > a {
+  border-radius: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em 1.5em;
+  gap: 0.5em;
+  background: #9B1512;
+  color: #fff;
+  position: relative;
+}
+.btn01 > a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  font-size: 40%;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  right: 3em;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  pointer-events: none;
+  clip-path: polygon(0 100%, 0 0, 100% 50%);/* (x y)、左下、左上、右上、右下 */
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  .btn01 > a {
+    padding: 1em 1.5em;
+  }
+}
+/* ▲ btn01 ▲ */
+
+/* ▼ btn02 ▼ */
+.btn02 > * {
+  border-radius: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em 1em 2.5em;
+  gap: 1em;
+  background: #4A2204;
+  color: #fff;
+  transition: .5s all;
+}
+.btn02 > *:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #ccc;
+  color: #4A2204;
+}
+.btn02 > * .arrow {
+  color: #4A2204;
+  background: #fff;
+  border-radius: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 2em;
+  overflow: hidden;
+  overflow: clip;
+  position: relative;
+}
+.btn02:hover > * .arrow > * {
+  animation: btn02_move .5s 1;
+}
+@keyframes btn02_move {
+  0% { transform: translateX(0); }
+  49% { transform: translateX(5em); }
+  50% { transform: translateX(-5em); }
+  51% { transform: translateX(-5em); }
+  100% { transform: translateX(0); }
+}
+/* ▲ btn02 ▲ */
+
+/* ▼ btn03 ▼ */
+.btn03 {
+  border-radius: 50vmin;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+.btn03 > a {
+  background: #E43E32;
+  color: #fff;
+  text-align: center;
+  padding: 1em 1.5em 1em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  overflow: clip;
+  border-radius: 50vmin;
+}
+.btn03 > a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #4A2204;
+  border-radius: 50vmin;
+  transform: translateX(-100%);
+  transition: .5s all;
+}
+.btn03 a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.btn03:hover > *::after {
+  transform: translateX(0);  
+}
+/* ▲ btn03 ▲ */
+
+/* ▼ btn04 ▼ */
+.btn04 {
+  border-radius: 50vmin;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+.btn04 > a {
+  background: #4A2204;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  gap: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  overflow: clip;
+  border-radius: 50vmin;
+}
+.btn04 > a .txt {
+  flex: 1;
+  text-align: center;
+}
+.btn04 > a .arrow {
+  color: #4A2204;
+  background: #fff;
+  width: 1.5em;
+  min-width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 80%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn04 > *::after {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  /* アニメーション */
+  animation-name: shiny;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes shiny {
+  0% {
+      transform: scale(0) rotate(25deg);
+      opacity: 0;
+  }
+
+  50% {
+      transform: scale(1) rotate(25deg);
+      opacity: 1;
+  }
+
+  100% {
+      transform: scale(50) rotate(25deg);
+      opacity: 0;
+  }
+}
+/* ▲ btn04 ▲ */
+
+/* ▼ btn05 ▼ */
+.btn05 {
+  padding-bottom: 1rem;
+}
+.btn05 > a {
+  text-align: center;
+  padding: .4em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 1rem;
+  color: #fff;
+  background: #ff80ab;
+  box-shadow: 0 1rem 0 #ea769c;
+  transition: .5s all;
+}
+.btn05 > a:hover {
+  box-shadow: 0 0 0 #ea769c;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #e63862;
+}
+.btn05 > a small {
+  font-size: 60%;
+}
+/* ▲ btn05 ▲ */
+
+/* ▼ btn06 ▼ */
+.btn06 {
+}
+.btn06 > a {
+  text-align: center;
+  padding: .4em 1em .4em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50vmin;
+  color: #e63862;
+  background: #fff;
+  border: 2px solid #e63862;
+  transition: .5s all;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));
+}
+.btn06 > a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #fff;
+  background: #e63862;
+}
+.btn06 .txt {
+  margin: auto;
+}
+/* ▲ btn06 ▲ */
+
+/* ▼ btn07 ▼ */
+.btn07 {
+  padding-bottom: 1rem;
+}
+.btn07 > a {
+  text-align: center;
+  padding: .4em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 1rem;
+  color: #fff;
+  background: #ea769c;
+  box-shadow: 0 1rem 0 #eee;
+  transition: .5s all;
+}
+.btn07 > a:hover {
+  box-shadow: 0 0 0 #eee;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #1B9F6A;
+  transform: scale(1.1);
+}
+.btn07 > a small {
+  font-size: 60%;
+}
+/* ▲ btn07 ▲ */
+
+/* ▼ btn08 ▼ */
+.btn08 > a {
+  border-radius: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  gap: 0.5em;
+  border: 2px solid #00DCFF;
+  border-radius: 50vmin;
+  color: #00DCFF;
+  text-decoration: none;
+  text-shadow: 
+    0 0 .5rem rgba(0, 220, 255, 0.4),
+    0 0 1rem rgba(0, 220, 255, 0.4),
+    0 0 2rem rgba(0, 220, 255, 0.5);
+  box-shadow:
+    0 0 .5rem rgba(0, 220, 255, 0.3),
+    0 0 1.5rem rgba(0, 220, 255, 0.3),
+    0 0 2rem rgba(0, 220, 255, 0.4),
+    inset 0 0 .5rem rgba(0, 220, 255, 0.3),
+    inset 0 0 1rem rgba(0, 220, 255, 0.4);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+/* ▲ btn08 ▲ */
+
+/* ▼ btn09 ▼ */
+.btn09 > a {
+  border-radius: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  gap: 0.5em;
+  color: #fff;
+  background: linear-gradient(270deg,
+    rgba(202, 110, 24, 0.94),
+    rgb(196, 127, 62),
+    rgb(226, 235, 103),
+    rgba(202, 110, 24, 0.94)
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 10s linear infinite;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn09 > a:hover {
+  transform: scale(1.05);
+}
+
+/* グラデーションアニメーション */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* ▲ btn09 ▲ */
+
+/* 
+=================================================================================
+
+▼▼▼　header　▼▼▼
+
+=================================================================================
+*/
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 1s all;
+  background: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 5rem;
+  transition: 1s all;
+  min-height: var(--hamburger-size);
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  header > .box {
+    padding-right: 0;
+  }
+}
+ul.header01 {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 8rem;
+}
+ul.header01 > li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+ul.header01 > li.item01 {
+  margin-left: 0;
+  margin-right: auto;
+}
+ul.header01 > li.hamburger_set {
+  margin-right: 0;
+}
+ol.header02 {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem 5rem;
+  height: 100%;
+  color: #fff;
+}
+ol.header02 > li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+h1 a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  
+}
+.mv {
+  position: relative;
+}
+.mv picture,
+.mv img,
+.sv picture,
+.sv img {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {/* PC用 */
+  .mv {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(../img/bg04.webp) center center / cover no-repeat;
+  }
+  .mv::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 901 / 122;
+  bottom: -1px;
+  left: 0;
+  background: url(../img/mv-bottom.webp) bottom center / 100% 100% no-repeat;
+  pointer-events: none;
+  }
+  .mv picture,
+  .mv picture img {
+    width: 107.6rem;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 769px) {/* PC用 */
+  h1 img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  h1 img {
+    width: 144px;
+  }
+}
+/* 
+=================================================================================
+
+▼▼▼　メガメニュー　▼▼▼
+
+=================================================================================
+*/
+.megamenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  transform: translateX(-100vw);
+  transition: 1s all;
+  opacity: 0;
+  background: #fff;
+  color: #4A2204;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+ol.header02 > li:hover .megamenu {
+  transform: translateX(0);
+  opacity: 1;
+}
+.megamenu > .box {
+  padding: 5rem 0;
+}
+/* ul.mega_area */
+ul.mega_area {
+}
+ul.mega_area > li.item01 {
+  margin-right: auto;
+}
+ul.mega_area > li.item02 {
+  flex: 1;
+}
+ol.mega_list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1em 2em;
+  flex-wrap: wrap;
+}
+ul.mega_area > li > a,
+ol.mega_list > li > a {
+  border-bottom: 2px solid #F29600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  background: url(../img/arrow02.webp) right 1.7rem center / 1.3rem auto no-repeat;
+}
+ul.mega_area > li > a {
+  border-bottom: none;
+}
+/* ▲ ul.mega_area ▲ */
+
+/* 
+=================================================================================
+
+▼▼▼　ハンバーガーメニュー　▼▼▼
+
+=================================================================================
+*/
+
+/* ▼▼ トグルボタン ▼▼ */
+:root {
+  --hamburger-size: 13rem; /* ハンバーガーアイコンサイズ */
+  --hamburger-line: 0.5; /* ハンバーガーアイコンの横線の長さ */
+}
+.hamburger_area {
+  position: relative;
+  z-index: 12;
+}
+.toggle_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+  width: var(--hamburger-size);
+  height: var(--hamburger-size);
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  background: #0C3061;
+  /* border-radius: 50%; */
+}
+.toggle_btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  right: calc((99.99% - (var(--hamburger-size) * var(--hamburger-line))) / 2);
+  width: calc(var(--hamburger-size) * var(--hamburger-line));
+  height: calc(var(--hamburger-size) * 0.04);/* ハンバーガーアイコンの縦線の長さ */
+  border-radius: 50vmin;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.toggle_btn span:nth-child(1) {
+  transform: translateY(calc(var(--hamburger-size) * -0.2));
+}
+.toggle_btn span:nth-child(2) {
+}
+.toggle_btn span:nth-child(3) {
+  transform: translateY(calc(var(--hamburger-size) * 0.2));
+  font-size: calc(var(--hamburger-size) * 0.2);
+}
+
+/* オープン時 */
+body.open .toggle_btn {
+  box-shadow: none;
+  background: rgba(12,48,97,0);
+  color: #fff;
+}
+body.open .toggle_btn span {
+  background-color: #fff;
+}
+body.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(0) rotate(225deg);
+  transform: translateY(0) rotate(225deg);
+}
+body.open .toggle_btn span:nth-child(2) {
+  -webkit-transform: translateY(0) rotate(-225deg);
+  transform: translateY(0) rotate(-225deg);
+}
+body.open .toggle_btn span:nth-child(3) {
+  opacity: 0;
+}
+/* ▼ ３ライン目をMENU/CLOSEという文字に変更 ▼ */
+body.open .toggle_btn span:nth-child(1) {
+  transform: translateY(calc(var(--hamburger-size) * -0.1)) rotate(225deg);
+}
+body.open .toggle_btn span:nth-child(2) {
+  transform: translateY(calc(var(--hamburger-size) * -0.1)) rotate(-225deg);
+}
+body:not(.open) .toggle_btn span:nth-child(3) {
+  height: 0;
+  color: #fff;
+}
+body.open .toggle_btn span:nth-child(3) {
+  opacity: inherit;
+  height: 0;
+}
+body:not(.open) .toggle_btn span:nth-child(3):before {
+  content: "MENU";
+}
+body.open .toggle_btn span:nth-child(3):before {
+  content: "CLOSE";
+}
+/* ▲ ３ライン目をMENU/CLOSEという文字に変更 ▲ */
+/* ▲▲ トグルボタン ▲▲ */
+
+/* ▼ グローバルナビ ▼ */
+.gloval-nav {
+  background-color: #0C3061;
+  color: #fff;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: var(--hamburger-size) 1em 1em;
+  transform: translateX(100%);
+  transition: 1s all;
+  width: 50rem;
+  max-height: 100vh;
+}
+.gloval-nav .gloval_box {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+.gloval-nav ul.gloval_ul > li {
+opacity: 0;
+transform: translateX(-200px);
+transition:  transform .6s ease, opacity .2s ease;
+border-top: 1px solid #DCDDDD;
+}
+.gloval-nav ul.gloval_ul > li:nth-child(2) { transition-delay: .1s; }
+.gloval-nav ul.gloval_ul > li:nth-child(3) { transition-delay: .2s; }
+.gloval-nav ul.gloval_ul > li:nth-child(4) { transition-delay: .3s; }
+.gloval-nav ul.gloval_ul > li:nth-child(5) { transition-delay: .4s; }
+.gloval-nav ul.gloval_ul > li:nth-child(6) { transition-delay: .5s; }
+.gloval-nav ul.gloval_ul > li:nth-child(7) { transition-delay: .6s; }
+.gloval-nav ul.gloval_ul > li:nth-child(8) { transition-delay: .7s; }
+.gloval-nav ul.gloval_ul > li:nth-child(9) { transition-delay: .8s; }
+.gloval-nav ul.gloval_ul > li:nth-child(n+10) { transition-delay: .9s; }
+
+.gloval-nav ul.gloval_ul > li > a {
+  display: block;
+  transition: color .6s ease;
+  padding: 2rem 1em 2rem 0;
+}
+
+/* open時 */
+.open {
+  overflow: hidden;
+}
+.open .hamburger_bg,
+.open .gloval-nav {
+visibility: visible;
+transform: translateX(0);
+transition: transform .6s;
+}
+.open .gloval-nav ul.gloval_ul > li {
+opacity: 1;
+transform: translateX(0);
+transition: transform 1s ease, opacity .9s ease;
+}
+/* ▲ グローバルナビ ▲ */
+
+/* ▼ アコーディオン ▼ */
+.ac_btn {
+  padding: .75em 1em .75em 0;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.ac_btn::before {
+  content: "＋";
+  position: absolute;
+  top: calc((100% - 1em) / 2);
+  right: 0;
+  pointer-events: none;
+  line-height: 1;
+  display: inline;
+}
+.ac_btn.active::before {
+  content: "－";
+}
+ul.sub_gloval_ul {
+  display: none;
+}
+ul.sub_gloval_ul > li {
+  border-top: 1px solid #DCDDDD;
+}
+ul.sub_gloval_ul > li > a {
+  display: block;
+  padding: .75em 1em;
+}
+/* ▲ アコーディオン ▲ */
+
+/* ▼ 背景網掛け ▼ */
+.hamburger_bg {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  /* transition: 1s all; */
+  width: 100vw;
+  max-height: 100vh;
+}
+/* ▲ 背景網掛け ▲ */
+
+/* 
+=================================================================================
+
+▼▼▼　パンくずリスト　▼▼▼
+
+=================================================================================
+*/
+ul.pankuzu_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em 3em;
+  flex-wrap: wrap;
+}
+ul.pankuzu_list > li {
+  position: relative;
+}
+ul.pankuzu_list > li:not(:last-child):before {
+  content: "/";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  right: -2em;
+}
+ul.pankuzu_list > li:last-child > a {
+  pointer-events: none;
+}
+
+/* 
+=================================================================================
+
+▼▼▼　ちらつき対策（CSS）　▼▼▼
+
+=================================================================================
+*/
+
+.loading {
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ローディングアニメーション */
+.loading img {
+  animation: loadingRotate 2s linear infinite;
+}
+
+/* ローディングアイコンの回転アニメーション */
+@keyframes loadingRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ローディング完了後の状態 */
+.loading.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 
+=================================================================================
+
+▼▼▼　SP用フローティングメニュー　▼▼▼
+
+=================================================================================
+*/
+
+.floatig_menu {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 3rem;
+  width: 100%;
+  background: #4A2204;
+  color: #fff;
+  z-index: 9;
+  transition: 1s all;
+}
+
+/* 
+=================================================================================
+
+▼▼▼　先頭へ戻る　▼▼▼
+
+=================================================================================
+*/
+
+.go_head {
+  border-radius: 50%;
+  position: fixed;
+  z-index:5;
+  right: 5rem;
+  bottom: -5rem;
+  overflow: hidden;
+  transition: 1s all;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.nav_active .go_head {
+  bottom: 5rem;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.go_head > a {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+.go_head > a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #4A2204;
+  pointer-events: none;
+  border-radius: 50%;
+  transition: 1s all;
+  z-index: -1;
+}
+.go_head > a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #9B1512;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 1s all;
+  animation: go_head_remove 0.5s 1 forwards;
+}
+@keyframes go_head_remove {
+  0% { transform: scale(1); }
+  40% { transform: scale(0.4); }
+  50% { transform: scale(0.6); }
+  100% { transform: scale(0); }
+}
+.go_head:hover > a:after {
+  animation: go_head_move 0.5s 1 forwards;
+}
+@keyframes go_head_move {
+  0% { transform: scale(0); }
+  40% { transform: scale(0.6); }
+  50% { transform: scale(0.4); }
+  100% { transform: scale(1); }
+}
+.go_head > a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.go_head > a .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {/* SP用 */
+  .nav_active .go_head {
+    bottom: 15vw;
+  }
+}
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+　▼▼　以降SP用　▼▼
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media screen and (max-width: 768px) {/* SP用 */
+  
+
+}
