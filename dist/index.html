@@ -1,265 +1,266 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<!-- canonicalURL -->
-<link rel="canonical" href="https://api.moratame.net/christmas2026/">
+    <!-- canonicalURL -->
+    <link rel="canonical" href="https://api.moratame.net/christmas2026/">
 
-<!-- ▼▼ OGP ▼▼ -->
-<title>モラタメ | クリスマス特集</title>
-<meta name="description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
-<meta name="thumbnail" content="https://image.moratame.net/img/christmas2026/og.png" />
+    <!-- ▼▼ OGP ▼▼ -->
+    <title>モラタメ | クリスマス特集</title>
+    <meta name="description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
+    <meta name="thumbnail" content="https://image.moratame.net/img/christmas2026/og.png" />
 
-<meta property="og:site_name" content="モラタメ" />
-<meta property="og:title" content="モラタメクリスマス特集" />
-<meta property="og:description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
-<meta property="og:url" content="https://api.moratame.net/christmas2026/" />
-<meta property="og:image" content="https://image.moratame.net/img/christmas2026/og.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="モラタメクリスマス特集" />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="モラタメ" />
+    <meta property="og:title" content="モラタメクリスマス特集" />
+    <meta property="og:description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
+    <meta property="og:url" content="https://api.moratame.net/christmas2026/" />
+    <meta property="og:image" content="https://image.moratame.net/img/christmas2026/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="モラタメクリスマス特集" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
 
-<!-- ▼ SNS OGP ▼ -->
-<meta name="twitter:site" content="@moratame" />
-<meta name="twitter:title" content="モラタメクリスマス特集" />
-<meta name="twitter:description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://image.moratame.net/img/christmas2026/og.png" />
-<meta name="twitter:image:alt" content="モラタメクリスマス特集" />
-<!-- ▲ SNS OGP ▲ -->
+    <!-- ▼ SNS OGP ▼ -->
+    <meta name="twitter:site" content="@moratame" />
+    <meta name="twitter:title" content="モラタメクリスマス特集" />
+    <meta name="twitter:description" content="ポッケと一緒に、クリスマスシーズンにオススメのタメせる商品をチェックしよう！" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://image.moratame.net/img/christmas2026/og.png" />
+    <meta name="twitter:image:alt" content="モラタメクリスマス特集" />
+    <!-- ▲ SNS OGP ▲ -->
 
-<!-- ▼ ファビコン ▼ -->
-<link rel="icon" id="favicon" href="https://www.moratame.net/favicon.ico" />
-<!-- iOS Safari and Chrome タッチアイコン -->
-<link rel="apple-touch-icon" sizes="192x192" href="https://www.moratame.net/apple-touch-icon.png">
-<!-- ▲ ファビコン ▲ -->
-<!-- ▲▲ OGP ▲▲ -->
-
-
-<!-- ▼ google font ▼ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<!-- ▲ google font ▲ -->
-<!-- ▼▼ css ▼▼ -->
-<link rel="stylesheet" href="css/destyle.css" />
-<link rel="stylesheet" href="css/common.css" />
-<link rel="stylesheet" href="css/style.css" />
-<!-- ▲▲ css ▲▲ -->
+    <!-- ▼ ファビコン ▼ -->
+    <link rel="icon" id="favicon" href="https://www.moratame.net/favicon.ico" />
+    <!-- iOS Safari and Chrome タッチアイコン -->
+    <link rel="apple-touch-icon" sizes="192x192" href="https://www.moratame.net/apple-touch-icon.png">
+    <!-- ▲ ファビコン ▲ -->
+    <!-- ▲▲ OGP ▲▲ -->
 
 
-<!-- ▼▼ js ▼▼ -->
-<!-- jquery -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<!-- ▼ ちらつき対策（JS無効時の対応） ▼ -->
-<noscript>
-  <style>
-    .loading {
-      display: none !important;
-    }
-  </style>
-</noscript>
-<!-- ▲ ちらつき対策（JS無効時の対応） ▲ -->
-<!-- ▲▲ js ▲▲ -->
+    <!-- ▼ google font ▼ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ▲ google font ▲ -->
 
-</head>
+    <!-- ▼▼ css ▼▼ -->
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ▲▲ css ▲▲ -->
 
 
-<body>
+    <!-- ▼▼ js ▼▼ -->
+    <!-- jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- ▼ ちらつき対策（JS無効時の対応） ▼ -->
+    <noscript>
+      <style>
+        .loading {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+    <!-- ▲ ちらつき対策（JS無効時の対応） ▲ -->
+    <!-- ▲▲ js ▲▲ -->
+
+  </head>
 
 
-<!-- 
+  <body>
+
+
+    <!-- 
 ------------------------ ▼▼▼▼ body ▼▼▼▼ ------------------------
 -->
 
-  <!-- ▼ ちらつき対策（HTML） ▼ -->
-  <div class="loading"><img src="img/loading.svg" width="30" alt=""></div>
+    <!-- ▼ ちらつき対策（HTML） ▼ -->
+    <div class="loading"><img src="img/loading.svg" width="30" alt=""></div>
 
-  <div class="wrapper">
-    <!-- ▼ wrapper ▼ -->
+    <div class="wrapper">
+      <!-- ▼ wrapper ▼ -->
 
-    <!-- ヘッダー -->
-    <header id="header">
-      <div class="inner w960 wow animate__animated animate__fadeInUp">
-        <h1><a href="https://www.moratame.net/" target="_blank"><img src="img/moratame20thlogo-3.png" alt="モラタメ 20th"></a></h1>
-      </div>
-    </header>
-    <section class="mv h620">
-      <picture>
-        <!-- SP用MV -->
-        <source srcset="img/mv_sp.webp" media="(max-width: 768px)" type="image/png">
-        <!-- PC用MV -->
-        <img class="wow animate__animated animate__fadeInUp" src="img/mv-catch.webp" alt="モラタメクリスマス特集">
-      </picture>
-    </section>
-
-
-<main id="main_contents">
-
-    <!-- ▼ sec01 ▼ -->
-    <i id="sec01" class="mt40"></i>
-    <section class="sec01">
-        <div class="inner w800 wow animate__animated animate__fadeInUp">
-            <h2>
-            <picture>
-            <!-- SP用 -->
-            <source srcset="img/recommend_ttl_sp.webp" media="(max-width: 768px)">
-            <!-- PC用 -->
-            <img src="img/recommend_ttl.webp" alt="ポッケがクリスマスシーズンにオススメのタメせる商品をご紹介します！">
-            </picture>
-            </h2>
-            
+      <!-- ヘッダー -->
+      <header id="header">
+        <div class="inner w960 wow animate__animated animate__fadeInUp">
+          <h1><a href="https://www.moratame.net/" target="_blank"><img src="img/moratame20thlogo-3.png" alt="モラタメ 20th"></a></h1>
         </div>
-    </section>
-    <!-- ▲ sec01 ▲ -->
+      </header>
+      <section class="mv h620">
+        <picture>
+          <!-- SP用MV -->
+          <source srcset="img/mv_sp.webp" media="(max-width: 768px)" type="image/png">
+          <!-- PC用MV -->
+          <img class="wow animate__animated animate__fadeInUp" src="img/mv-catch.webp" alt="モラタメクリスマス特集">
+        </picture>
+      </section>
 
-    <!-- ▼ sec02 ▼ -->
-    <i id="sec02" class="mt40"></i>
-    <section class="sec02 pb80">
-        <div class="inner w800 wow animate__animated animate__fadeInUp">
+
+      <main id="main_contents">
+
+        <!-- ▼ sec01 ▼ -->
+        <i id="sec01" class="mt40"></i>
+        <section class="sec01">
+          <div class="inner w800 wow animate__animated animate__fadeInUp">
+            <h2>
+              <picture>
+                <!-- SP用 -->
+                <source srcset="img/recommend_ttl_sp.webp" media="(max-width: 768px)">
+                <!-- PC用 -->
+                <img src="img/recommend_ttl.webp" alt="ポッケがクリスマスシーズンにオススメのタメせる商品をご紹介します！">
+              </picture>
+            </h2>
+
+          </div>
+        </section>
+        <!-- ▲ sec01 ▲ -->
+
+        <!-- ▼ sec02 ▼ -->
+        <i id="sec02" class="mt40"></i>
+        <section class="sec02 pb80">
+          <div class="inner w800 wow animate__animated animate__fadeInUp">
             <!-- ▼ list01 ▼ -->
             <ul class="list01">
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item01.webp" alt="MEGAMIS（メガミス）［シャンプー／ヘアセラム／トリートメント］3種セット"></div>
-                    <div class="pokke mt10"><img src="img/point01.webp" alt="3STEPで叶える、女神級にまとまるるしっとりツヤ神へ。※シリーズ使いによる"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=03e4b" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item02.webp" alt="Fun to Me マイメンテ養生茶 「寒」／「燥」 各1点（計30包）"></div>
-                    <div class="pokke mt10"><img src="img/point02.webp" alt="様々な和漢素材をブレンドした養生茶で、女性のゆらぎをサポート！"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=ba28e" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item03.webp" alt="Fun to Me マイメンテ養生茶 「熱」／「燥」 各1点（計30包）"></div>
-                    <div class="pokke mt10"><img src="img/point03.webp" alt="暑がり、冬でも冷たいものが好きな方や、水分不足、のどが渇きやすい方におすすめ！"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=d600d" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item04.webp" alt="prebiNOva（プレビノーバ）2点セット"></div>
-                    <div class="pokke mt10"><img src="img/point04.webp" alt="なめるだけで口腔環境をサポート！持続するクリアな息へ"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=aabad" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item05.webp" alt="ダヴ クリームボディウォッシュ ジョイアスグロウ 1点"></div>
-                    <div class="pokke mt10"><img src="img/point05.webp" alt="パックもできるなめらかクリームタイプのボディウォッシュ！フローラルの香りが癒される♪"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=8c729" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
-                <li class="wow animate__animated animate__fadeInUp">
-                    <div class="img"><img src="img/item06.webp" alt="ミシオネス カベルネ・ソーヴィニヨン ボトル缶 2種6本"></div>
-                    <div class="pokke mt10"><img src="img/point06.webp" alt="飲みきりサイズのワイン2種！クリスマスパーティーのお供におすすめ！"></div>
-                    <div class="btn mt10">
-                        <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=d7e98" target="_blank">お申し込みはこちらから</a></div>
-                    </div>
-                </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item01.webp" alt="MEGAMIS（メガミス）［シャンプー／ヘアセラム／トリートメント］3種セット"></div>
+                <div class="pokke mt10"><img src="img/point01.webp" alt="3STEPで叶える、女神級にまとまるるしっとりツヤ神へ。※シリーズ使いによる"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=03e4b" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item02.webp" alt="Fun to Me マイメンテ養生茶 「寒」／「燥」 各1点（計30包）"></div>
+                <div class="pokke mt10"><img src="img/point02.webp" alt="様々な和漢素材をブレンドした養生茶で、女性のゆらぎをサポート！"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=ba28e" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item03.webp" alt="Fun to Me マイメンテ養生茶 「熱」／「燥」 各1点（計30包）"></div>
+                <div class="pokke mt10"><img src="img/point03.webp" alt="暑がり、冬でも冷たいものが好きな方や、水分不足、のどが渇きやすい方におすすめ！"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=d600d" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item04.webp" alt="prebiNOva（プレビノーバ）2点セット"></div>
+                <div class="pokke mt10"><img src="img/point04.webp" alt="なめるだけで口腔環境をサポート！持続するクリアな息へ"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=aabad" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item05.webp" alt="ダヴ クリームボディウォッシュ ジョイアスグロウ 1点"></div>
+                <div class="pokke mt10"><img src="img/point05.webp" alt="パックもできるなめらかクリームタイプのボディウォッシュ！フローラルの香りが癒される♪"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=8c729" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
+              <li class="wow animate__animated animate__fadeInUp">
+                <div class="img"><img src="img/item06.webp" alt="ミシオネス カベルネ・ソーヴィニヨン ボトル缶 2種6本"></div>
+                <div class="pokke mt10"><img src="img/point06.webp" alt="飲みきりサイズのワイン2種！クリスマスパーティーのお供におすすめ！"></div>
+                <div class="btn mt10">
+                  <div class="btn01 fs20 sp_fs18 b"><a href="https://www.moratame.net/detail/tamesu.php?&project_id=d7e98" target="_blank">お申し込みはこちらから</a></div>
+                </div>
+              </li>
             </ul>
             <!-- ▲ list01 ▲ -->
             <div class="box01 fs16 sp_fs14 b red mt55">
-                <!-- ▼ list02 ▼ -->
-                <ul class="list02">
+              <!-- ▼ list02 ▼ -->
+              <ul class="list02">
                 <li>お申し込みは先着順のため、在庫数に限りがございます。</li>
                 <li>また12月下旬のお申し込みの場合、お届け予定日がクリスマス以降になる場合がございます。</li>
                 <li>商品在庫数やお届け予定日は、タメせるお申し込みページでご確認の上、お申し込みをお願いします。</li>
                 <li>クリスマス特集ページに紹介前に商品のお申し込みされた方も、ポイント付与の抽選対象になっています。</li>
-                </ul>
-                <!-- ▲ list02 ▲ -->
+              </ul>
+              <!-- ▲ list02 ▲ -->
             </div>
-        </div>
-    </section>
-    <!-- ▲ sec02 ▲ -->
+          </div>
+        </section>
+        <!-- ▲ sec02 ▲ -->
 
-    <!-- ▼ sec03 ▼ -->
-    <i id="sec03" class=""></i>
-    <section class="sec03 pt60 pb100 sp_pt40 sp_pb100">
-        <div class="inner w800 wow animate__animated animate__fadeInUp">
+        <!-- ▼ sec03 ▼ -->
+        <i id="sec03" class=""></i>
+        <section class="sec03 pt60 pb100 sp_pt40 sp_pb100">
+          <div class="inner w800 wow animate__animated animate__fadeInUp">
             <div class="snow center fs32 sp_fs28 white b lh120p">
-                <h3>クリスマスのオススメ<br class="sp">対象商品を<br class="pc">お申込み<br class="sp">いただいた方の中から<br><strong class="yellow">抽選で300名様</strong>に<br>モラタメポイント<strong class="yellow">100pt</strong><br class="sp">プレゼント</h3>
+              <h3>クリスマスのオススメ<br class="sp">対象商品を<br class="pc">お申込み<br class="sp">いただいた方の中から<br><strong class="yellow">抽選で300名様</strong>に<br>モラタメポイント<strong class="yellow">100pt</strong><br class="sp">プレゼント</h3>
             </div>
             <div class="txt fs24 sp_fs20 b white center mt40">「モラタメクリスマス特集」<br class="sp">対象バナーはこちら</div>
             <div class="bnr center mt20">
-                <div class="bnr-ttl"></div>
-                <div class="bnr-img w640 table"><img src="img/bnr01.webp" alt="モラタメクリスマス特集"></div>
+              <div class="bnr-ttl"></div>
+              <div class="bnr-img w640 table"><img src="img/bnr01.webp" alt="モラタメクリスマス特集"></div>
             </div>
-        </div>
-        <div class="bg center">
+          </div>
+          <div class="bg center">
             <img class="pc wow animate__animated animate__fadeInUp" src="img/bg02.webp" width="1120" alt="">
             <img class="sp sp_w90p wow animate__animated animate__fadeInUp" src="img/bg02_sp.webp" alt="">
-        </div>
-    </section>
-    <!-- ▲ sec03 ▲ -->
+          </div>
+        </section>
+        <!-- ▲ sec03 ▲ -->
 
-    <!-- ▼ sec04 ▼ -->
-    <i id="sec04" class=""></i>
-    <section class="sec04 h690 sp_pt40 sp_pb40">
-        <div class="inner w800 wow animate__animated animate__fadeInUp">
+        <!-- ▼ sec04 ▼ -->
+        <i id="sec04" class=""></i>
+        <section class="sec04 h690 sp_pt40 sp_pb40">
+          <div class="inner w800 wow animate__animated animate__fadeInUp">
             <div class="sec04-box">
-                <div class="frame01"><img src="img/frame01.webp" alt=""></div>
-                <div class="content">
-                    <h3 class="center"><img src="img/ttl01.webp" width="543" alt="キャンペーン概要"></h3>
-                    <div class="mt30">
-                        <h4 class="midashi01 fs24 sp_fs20 b brown">クリスマス特集の<br class="sp">お申し込み対象期間</h4>
-                        <p class="fs20 sp_fs18 b mthem">2026年12月1日(火)～<br class="sp">2026年12月25日(金)23:59</p>
-                    </div>
-                    <div class="mt30">
-                        <h4 class="midashi01 fs24 sp_fs20 b brown">キャンペーン内容</h4>
-                        <p class="fs20 sp_fs18 b mthem">期間中に「クリスマスのオススメ対象商品」をお申し込みいただいた方の中から<br class="pc">
-                        抽選で300名様にモラタメポイント100ptをプレゼントします。</p>
-                    </div>
-                    <div class="mt30">
-                        <h4 class="midashi01 fs24 sp_fs20 b brown">ポイント付与時期</h4>
-                        <p class="fs20 sp_fs18 b mthem">2027年1月下旬を予定<br>
-                        ※ポイント付与はマイページよりご確認頂けます。</p>
-                    </div>
+              <div class="frame01"><img src="img/frame01.webp" alt=""></div>
+              <div class="content">
+                <h3 class="center"><img src="img/ttl01.webp" width="543" alt="キャンペーン概要"></h3>
+                <div class="mt30">
+                  <h4 class="midashi01 fs24 sp_fs20 b brown">クリスマス特集の<br class="sp">お申し込み対象期間</h4>
+                  <p class="fs20 sp_fs18 b mthem">2026年12月1日(火)～<br class="sp">2026年12月25日(金)23:59</p>
                 </div>
-                <div class="frame02"><img src="img/frame02.webp" alt=""></div>
+                <div class="mt30">
+                  <h4 class="midashi01 fs24 sp_fs20 b brown">キャンペーン内容</h4>
+                  <p class="fs20 sp_fs18 b mthem">期間中に「クリスマスのオススメ対象商品」をお申し込みいただいた方の中から<br class="pc">
+                    抽選で300名様にモラタメポイント100ptをプレゼントします。</p>
+                </div>
+                <div class="mt30">
+                  <h4 class="midashi01 fs24 sp_fs20 b brown">ポイント付与時期</h4>
+                  <p class="fs20 sp_fs18 b mthem">2027年1月下旬を予定<br>
+                    ※ポイント付与はマイページよりご確認頂けます。</p>
+                </div>
+              </div>
+              <div class="frame02"><img src="img/frame02.webp" alt=""></div>
             </div>
-        </div>
-    </section>
-    <!-- ▲ sec04 ▲ -->
+          </div>
+        </section>
+        <!-- ▲ sec04 ▲ -->
 
 
-</main>
+      </main>
 
-    <!-- フッター -->
-    <!-- ▼ footer ▼ -->
-    <i id="footer"></i>
-    <footer class="footer">
-      <div class="inner w800 wow animate__animated animate__fadeInUp">
-        <div class="f-box">
-          <div class="f-logo"><a href="https://privacymark.jp/" target="_blank"><img src="img/pmark_s.gif" alt=""></a></div>
-          <div class="f-txt">
-            <!-- ▼ f-list ▼ -->
-            <ul class="f-list fs10 sp_fs9">
-              <li>企業情報： <a href="https://www.excrie.co.jp/" target="_blank">会社概要</a> | <a href="https://www.moratame.net/contents/hyouji.php" target="_blank">特定商取引に基づく表記</a> | <a href="https://api.moratame.net/inquiry/ja" target="_blank">メーカーご担当者の方へ</a></li>
-              <li>株式会社エクスクリエはプライバシーマークを取得しています。当社の「個人情報保護方針」は<a href="https://www.moratame.net/privacy-policy/" target="_blank">こちら</a>です。</li>
-              <li>(c) excrie Inc. All rights reserved. 本サイトは、<a href="https://www.excrie.co.jp/" target="_blank">株式会社エクスクリエ</a>により運営されております。</li>
-            </ul>
-            <!-- ▲ f-list ▲ -->
+      <!-- フッター -->
+      <!-- ▼ footer ▼ -->
+      <i id="footer"></i>
+      <footer class="footer">
+        <div class="inner w800 wow animate__animated animate__fadeInUp">
+          <div class="f-box">
+            <div class="f-logo"><a href="https://privacymark.jp/" target="_blank"><img src="img/pmark_s.gif" alt=""></a></div>
+            <div class="f-txt">
+              <!-- ▼ f-list ▼ -->
+              <ul class="f-list fs10 sp_fs9">
+                <li>企業情報： <a href="https://www.excrie.co.jp/" target="_blank">会社概要</a> | <a href="https://www.moratame.net/contents/hyouji.php" target="_blank">特定商取引に基づく表記</a> | <a href="https://api.moratame.net/inquiry/ja" target="_blank">メーカーご担当者の方へ</a></li>
+                <li>株式会社エクスクリエはプライバシーマークを取得しています。当社の「個人情報保護方針」は<a href="https://www.moratame.net/privacy-policy/" target="_blank">こちら</a>です。</li>
+                <li>(c) excrie Inc. All rights reserved. 本サイトは、<a href="https://www.excrie.co.jp/" target="_blank">株式会社エクスクリエ</a>により運営されております。</li>
+              </ul>
+              <!-- ▲ f-list ▲ -->
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- ▲ footer ▲ -->
+      </footer>
+      <!-- ▲ footer ▲ -->
 
-  </div><!-- ▲ wrapper ▲ -->
+    </div><!-- ▲ wrapper ▲ -->
 
-</body>
+  </body>
+
 </html>
 
 
@@ -278,4 +279,5 @@
 <!-- ▲ wowでスクロール対応化 ▲ -->
 <!-- ▲▲ スクロールアニメーション ▲▲ -->
 
-<!-- カスタムJS --><script src="js/main.js"></script>
+<!-- カスタムJS -->
+<script src="js/main.js"></script>
